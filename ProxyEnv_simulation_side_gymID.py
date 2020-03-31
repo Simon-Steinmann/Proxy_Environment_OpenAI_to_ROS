@@ -4,7 +4,9 @@ from Pyro4 import naming
 import gym
 import threading
 
-# Input the id of a gym Environment you wish to use
+# Input the id of a gym Environment you wish to use. You may have to import the 
+# environment file first.
+from openai_ros.task_envs.cartpole_stay_up import stay_up
 env_id = 'CartPole-v0'
 
 # This proxyID has to be the same as in the ProxyEnv on the Reinforcement Learning side. 
